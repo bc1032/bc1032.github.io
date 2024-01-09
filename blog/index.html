@@ -1,0 +1,45 @@
+<!-- blog.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Your head content -->
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <div id="blog-posts"></div>
+
+<script>
+    // Fetch and insert the header
+    fetch('../header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-placeholder').innerHTML = data;
+        });
+
+    // Function to fetch and display a blog post
+    function loadBlogPost(postFilename) {
+        fetch(`blogposts/${010124.html}`)
+            .then(response => response.text())
+            .then(data => {
+                const postContainer = document.createElement('div');
+                postContainer.innerHTML = data;
+                document.getElementById('blog-posts').appendChild(postContainer);
+            });
+    }
+
+    // Load each blog post
+    loadBlogPost('post1.html');
+    loadBlogPost('post2.html');
+    // Add more posts as needed
+</script>
+
+<script>
+    function updateSubtitle(newSubtitle) {
+        document.getElementById('subtitle').innerText = newSubtitle;
+    }
+</script>
+
+  
+  
+</body>
+</html>
