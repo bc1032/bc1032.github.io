@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 
 <body>
-    <header>
-       <div id="header-placeholder"></div>
-<script>
-fetch('header.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('header-placeholder').innerHTML = data;
-            updateSubtitle('Research Interests');
 
-    });
-</script>
-    </header>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                updateSubtitle('My Custom Subtitle for Blog');
+            });
 
-<body>
+        function updateSubtitle(newSubtitle) {
+            document.getElementById('subtitle').innerText = newSubtitle;
+        }
+    </script>
+    
     <div class="content">
         <h2>Liquid Crystals: A World Between Solid and Liquid</h2>
         <p>
