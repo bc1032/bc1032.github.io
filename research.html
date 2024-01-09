@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<body>
+    <header>
+       <div id="header-placeholder"></div>
+<script>
+fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+            updateSubtitle('Research Interests');
+
+    });
+</script>
+    </header>
+
+<body>
+    <div class="content">
+        <h2>Liquid Crystals: A World Between Solid and Liquid</h2>
+        <p>
+            Liquid crystals represent a fascinating phase of matter, bridging the gap between the ordered world of solids and the chaotic realm of liquids. 
+    My research delves deeply into <strong>cholesteric liquid crystals</strong>, known for their unique ability to reflect light and their exquisite sensitivity to external stimuli. 
+          These materials exhibit a helical structure in their molecular arrangement, leading to intriguing optical properties and making them vital in numerous applications, 
+          from display technologies to biosensors.
+        </p>
+        <p>
+            A particularly captivating aspect of my work lies in exploring the <strong>topology of liquid crystals</strong>.
+          This field is about understanding how the orientation and alignment of molecules in liquid crystals can form various structures and patterns. 
+          Topology in liquid crystals is not just a theoretical curiosity; it has profound implications for how we can manipulate and utilise these materials in advanced technological applications.
+        </p>
+        <p>
+            My fascination also extends to <strong>exotic defects</strong> within these materials, such as skyrmions and hopfions.
+          These defects are not mere imperfections but are rather complex and beautiful structures that embody the intricate dance of molecular alignment. 
+          Skyrmions and hopfions, for example, with their unique topological properties, could unlock new potentials in the field of information storage and processing,
+          paving the way for futuristic technologies.
+        </p>
+        <p>
+            The world of liquid crystals is vibrant and endlessly fascinating, offering a window into a realm where science meets art, 
+          and where the potential for innovation is boundless. As I continue my research, I am constantly reminded of the beauty and complexity inherent in the world of soft matter physics.
+        </p>
+    </div>
+</body>
+     <footer>
+        <p>&copy; 2024 Benjamin M.G.D Carter. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
