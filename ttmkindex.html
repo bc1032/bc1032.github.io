@@ -1,42 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<div id="header-placeholder"></div>
-<script>
-fetch('header.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('header-placeholder').innerHTML = data;
-    });
-</script>
+<head>
+    <meta charset="UTF-8">
+    <title>Talking to My Kids About Science</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #F0F8FF; }
+        .header { background-color: #FFD700; color: green; padding: 10px 0; text-align: center; }
+        .nav-bar { background-color: #32CD32; overflow: hidden; }
+        .nav-bar a { float: left; display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none; }
+        .nav-bar a:hover { background-color: #ddd; color: black; }
+        .banner { width: 100%; height: 200px; background: url('your-banner-image.jpg') no-repeat center center; background-size: cover; }
+        .main-content { padding: 20px; }
+        .footer { background-color: #FF69B4; color: white; text-align: center; padding: 10px 0; }
+        .interactive-element { background-color: #87CEFA; padding: 20px; margin-top: 20px; }
+    </style>
+</head>
 <body>
-    <header>
-        <div class="container">
-            <div id="branding">
-                <h1>Talking to My Kids About Science</h1>
-                <p>Ramblings of a Physicist</p>
-            </div>
-            <nav>
-                <ul>
-                    <li class="current"><a href="index.html">Home</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="publications.html">Publications</a></li>
-                    <li><a href="updates.html">News</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-  <div class="banner">
-        <div class="container">
-<!--            <h1>Benjamin M.G.D Carter</h1>-->
-<!--            <p>Computational and Theoretical Physicist</p>-->
-        </div>
+    <div class="header">
+        <h1>Talking to My Kids About Science</h1>
     </div>
-
-    <div class="container">
-        <section id="main">
-            <h2>Talking to My Kids About Science: Bridging Generations Through Discovery</h2>
+    <div class="nav-bar">
+        <a href="#home">Home</a>
+        <a href="#experiments">Experiments</a>
+        <a href="#fun-facts">Fun Facts</a>
+        <a href="#games">Games</a>
+    </div>
+    <div class="banner">
+        <!-- Banner image goes here -->
+    </div>
+    <div class="main-content">
+    <h2>Talking to My Kids About Science: Bridging Generations Through Discovery</h2>
         <p>
             As a scientist and a parent, I've embarked on a delightful journey — talking to my kids about science.  
             This initiative is more than just a pastime; it's a bridge connecting the world of complex scientific ideas to the curious minds of the younger generation.  
@@ -61,12 +54,17 @@ fetch('header.html')
             It's about showing them that science is not just about experiments and equations; it's about exploring the universe, understanding how things work, and asking 'why' and 'how' at every step.  
             Join us on this journey, and let's explore the fascinating world of Science together!
         </p>
-
-<h2><u>Who the hell are you?</u></h2>
-    <p>At the heart of this project is the idea that you should never trust anything that you're told at face value; I believe that everyone should question things.  Everyone should inform themselves.
+   <!-- Interactive Element Placeholder -->
+        <div class="interactive-element">
+            <h3>Who the hell are you?!</h3>
+            <button onclick="toggleContent()">Good question! I'll tell you...</button>
+            <div id="content" class="content" style="display:none;">
+                <!-- Content about nature's soft matter -->
+                 <p>At the heart of this project is the idea that you should never trust anything that you're told at face value; 
+                     I believe that EVERYONE should question things, ALL the time.  In order to do this, everyone should inform themselves.
           Therefore, if you're anything like me, you are already questioning who I am and how I can speak with any authority on such matters!  It's only right and fair then that I should introduce myself,
          and tell you who the hell I am.
-        </p>  
+        </p>      
          <p>
     It's a great question!  I'm a passionate explorer of the universe, at least the tiny part of it that's covered by theoretical physics and soft matter.  
              As a PhD student in Theoretical Physics, researching the world of "Soft Matter" and Topology, at the University of Bristol, 
@@ -83,9 +81,25 @@ fetch('header.html')
             and understand the natural world.  From the screens of our smartphones to the mysteries of the diverse patterns and aesthetic beauty inherent in nature,
              my work explores the intricate dance of molecules, and the strange properties they exhibit under various conditions.
         </p>
+          
+        <p>
+            I'm not just about equations and lab coats, though.  As a dedicated parent and an enthusiast of science communication, 
+            I believe in breaking down complex concepts into fun and digestible chunks.  Why?  Because science is for everyone!  In the words of one of my great heroes Carl Sagan:
+             "We are made of star-stuff.  [Science is a] way for the Universe to know itself!"
+            It's a thrilling, ever-evolving story, and I'm here to share its most exciting chapters with you.
+        </p>
+        <p>
+            So, there you have it — a <span class="highlight">scientist, educator, and storyteller</span>, all rolled into one.  
+            I'm here to guide you through the wonders of science, one fascinating topic at a time.
+        </p>    
+        
+            </div>
+        </div>
+  
+   <h2>Soft?  What in the world does soft mean (apart from you)?</h2>
         <p>
             When I say I study soft matter, you might wonder what exactly that entails.  Well, it's as diverse and intriguing as it sounds – spanning everything 
-            <span class="highlight">from goo to poo and food to brewed</span>!  
+         from <b>goo to poo</b> and <b>food to brewed</b>!  
             This encapsulates the vast range of materials I consider in my research, from everyday substances like toothpaste (the goo) to biological systems (yes, poo!) and chocolate (please
              never put those two words together again!).  
             But there's so much more to it than just these familiar forms.
@@ -133,32 +147,31 @@ fetch('header.html')
             So, there you have it: my journey through the world of soft matter is as varied as it is exciting.  
             It's a field where cutting-edge science meets everyday life, and I'm thrilled to be lucky enough to be a part of it.
         </p>
-            
-        <p>
-            I'm not just about equations and lab coats, though.  As a dedicated parent and an enthusiast of science communication, 
-            I believe in breaking down complex concepts into fun and digestible chunks.  Why?  Because science is for everyone!  In the words of one of my great heroes Carl Sagan:
-             "We are made of star-stuff.  [Science is a] way for the Universe to know itself!"
-            It's a thrilling, ever-evolving story, and I'm here to share its most exciting chapters with you.
-        </p>
-        <p>
-            So, there you have it — a <span class="highlight">scientist, educator, and storyteller</span>, all rolled into one.  
-            I'm here to guide you through the wonders of science, one fascinating topic at a time.
-        </p>    
-          
-        </section>
+  
+        <!-- Interactive Element Placeholder -->
+        <div class="interactive-element">
+            <h3>Discover Nature's Soft Matter Wonders</h3>
+            <button onclick="toggleContent()">Learn More</button>
+            <div id="content" class="content" style="display:none;">
+                <!-- Content about nature's soft matter -->
+                <p>Explore how Mother Nature uses soft matter in amazing ways...</p>
+            </div>
+        </div>
+        <!-- More content sections can be added here -->
+    </div>
+    <div class="footer">
+        <p>© 2024 Science for Kids</p>
     </div>
 
-    <footer>
-        <p>&copy; 2024 Benjamin M.G.D Carter. All Rights Reserved.</p>
-    </footer>
+    <script>
+        function toggleContent() {
+            var content = document.getElementById("content");
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
